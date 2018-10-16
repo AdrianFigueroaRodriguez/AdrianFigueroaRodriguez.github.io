@@ -1,16 +1,8 @@
+/** Main tags */
 h1{
 	font-size: 30px;
 	background-color: #737373;
 	color: white;
-	text-align: center;
-}
-
-.divs{
-	font-size: 5vw;
-	font-family: Arial;
-}
-
-#saludo{
 	text-align: center;
 }
 
@@ -43,3 +35,18 @@ nav {
 	height: 48px;
 	background-color: #737373;
 }
+
+/** Clases */
+
+.divs{
+	font-size: 5vw;
+	font-family: Arial;
+}
+
+/** IDs */
+
+#saludo{
+	text-align: center;
+}
+
+
