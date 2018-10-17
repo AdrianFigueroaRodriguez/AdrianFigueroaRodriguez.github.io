@@ -2,31 +2,41 @@
 <html>
 <head>
 	<title> Calculador de Figuras </title>
-	<!--<link rel="stylesheet" href="indexCss.css">-->
-	 <meta http-equiv="content-type" name="viewport" content="width=device-width; initial-scale=1.0; text/html; charset=utf-8;"> 
+	<link rel="stylesheet" href="indexCss.css">
+	<meta http-equiv="content-type" name="viewport" content="width=device-width; initial-scale=1.0; text/html; charset=utf-8;"> 
 </head>
 <body>
+<header>
+	<h1> Calculador de perimetro, area y volumen de un objeto </h1>
+</header>
 
-<h1> Calculador de perimetro, area y volumen de un objeto </h1>
+<ul id="ulMenu" > 
+	<li id="liMenuFormat" class="MenuObject"> 2D:</li> 
+	<li id="liMenuFormat" class="MenuObject">
+		<a href="#FR"> Figuras Regulares </a>
+	</li>
+	<li id="liMenuFormat" class="MenuObject">
+		<a href="#FI"> Figuras Irregulares </a>
+	</li>
+	<li id="liMenuFormat" class="MenuObject"> 3D:</li>
+	<li id="liMenuFormat" class="MenuObject">
+		<a href="#Cu">Cuadradas </a>
+	</li>
+	<li id="liMenuFormat" id="liMenuColor" class="MenuObject">
+		<a href="#Cl">Cilindricas </a>
+	</li>
+	<li id="liMenuFormat" class="MenuObject">
+		<a href="#Es">Esferica </a>
+	</li>
+</ul> 
 
-<ol>
-	<li> 2D </li>
-		<ul> 
-			<li> Figuras Regulares </li>
-			<li> Figuras Irregulares </li>
-		</ul>
-	<li> 3D </li>
-		<ul>
-			<li>Cuadradas</li>
-			<li>Cilindricas </li>
-			<li>Esferica </li>
-		</ul>
 
-</ol>
 
+<br>
+<br>
 <section>
 	<nav>
-		<p> Figuras Regulares </p>
+		<p id="FR"> Figuras Regulares </p>
 		<ul>
 			<li>Triágulo Regular </li>
 			<li>Cuadrado Regular </li>
@@ -36,7 +46,7 @@
 			<li>Decágono Regular </li>
 		</ul>
 
-		<p> Figuras Irregulares </p>
+		<p id="FI"> Figuras Irregulares </p>
 		<ul>
 			<li>Triágulo Irrgular </li>
 			<li>Cuadilatero </li>
@@ -46,21 +56,21 @@
 			<li>Decágono Irregular </li>
 		</ul>
 
-		<p> Cuadrados </p>
+		<p id="Cu"> Cuadrados </p>
 		<ul>
-			<li>Cubo </li>Elipsoide 
+			<li>Cubo </li>
 			<li>Prisma </li>
 			<li>Prisma Triangular </li>
 			<li>Prisma Triangular (3) </li>
 		</ul>
 
-		<p> Cilidros </p>
+		<p id="Cl"> Cilidros </p>
 		<ul>
 			<li>Cilindro circular </li>
 			<li>Torus </li>
 		</ul>
 
-		<p> Esferas </p>
+		<p id="Es"> Esferas </p>
 		<ul>
 			<li>Esfera </li>
 			<li>Elipsoide </li>
