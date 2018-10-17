@@ -1,13 +1,13 @@
 <!DOCTYPE.html>
 <html>
 <head>
-	<title> Calculador de Figuras </title>
+	<title> Calculador de Objetos </title>
 	<link rel="stylesheet" href="indexCss.css">
 	<meta http-equiv="content-type" name="viewport" content="width=device-width; initial-scale=1.0; text/html; charset=utf-8;"> 
 </head>
 <body>
 <header>
-	<h1> Calculador de perimetro, area y volumen de un objeto </h1>
+	<h1> Calculador de: <br> perimetro, area y volumen de un objeto </h1>
 </header>
 
 <ul id="ulMenu" > 
@@ -30,62 +30,135 @@
 	</li>
 </ul> 
 
-
-
-<br>
-<br>
 <section>
 	<nav>
 		<p id="FR"> Figuras Regulares </p>
-		<ul>
-			<li>Triágulo Regular </li>
-			<li>Cuadrado Regular </li>
-			<li>Pentágono Regular </li>
-			<li>Hexágono Regular </li>
-			<li>Octágono Regular </li>
-			<li>Decágono Regular </li>
+		<ul id="ulInfoContainer">
+			<li class="navUlLi">
+				<a href="#TR"> Triágulo Regular </a>
+			</li>
+			<li class="navUlLi">
+				<a href="#CR">Cuadrado Regular </a>
+			</li>
+			<li class="navUlLi">
+				<a href="#PR">Pentágono Regular </a>
+			</li>
+			<li class="navUlLi">
+				<a href="#HR">Hexágono Regular </a>
+			</li>
+			<li class="navUlLi">
+				<a href="#OR">Octágono Regular </a>
+			</li>
+			<li class="navUlLi">
+				<a href="#DR">Decágono Regular </a>
+			</li>
 		</ul>
 
 		<p id="FI"> Figuras Irregulares </p>
-		<ul>
-			<li>Triágulo Irrgular </li>
-			<li>Cuadilatero </li>
-			<li>Pentágono Irregular </li>
-			<li>Hexágono Irregular </li>
-			<li>Octágono u Octógono Irregular </li>
-			<li>Decágono Irregular </li>
+		<ul id="ulInfoContainer">
+			<li class="navUlLi">
+				<a href="#TI">Triágulo Irrgular </a>
+			</li>
+			<li class="navUlLi">
+				<a href="#Cua">Cuadilatero </a>
+			</li>
+			<li class="navUlLi">
+				<a href="#PI">Pentágono Irregular </a>
+			</li>
+			<li class="navUlLi">
+				<a href="#HI">Hexágono Irregular </a>
+			</li>
+			<li class="navUlLi">
+				<a href="#OI">Octágono Irregular </a>
+			</li>
+			<li class="navUlLi">
+				<a href="#DI">Decágono Irregular </a>
+			</li>
 		</ul>
 
 		<p id="Cu"> Cuadrados </p>
-		<ul>
-			<li>Cubo </li>
-			<li>Prisma </li>
-			<li>Prisma Triangular </li>
-			<li>Prisma Triangular (3) </li>
+		<ul id="ulInfoContainer">
+			<li class="navUlLi">
+				<a href="#Cub">Cubo </a>
+			</li>	
+			<li class="navUlLi">
+				<a href="#Pri">Prisma </a>
+			</li>
+			<li class="navUlLi">
+				<a href="#PriT">Prisma Triangular </a>
+			</li>
+			<li class="navUlLi">
+				<a href="#PriT3">Prisma Triangular (3) </a>
+			</li>
 		</ul>
 
-		<p id="Cl"> Cilidros </p>
-		<ul>
-			<li>Cilindro circular </li>
-			<li>Torus </li>
+		<p id="Cl"> Cilindros </p>
+		<ul id="ulInfoContainer">
+			<li class="navUlLi">
+				<a href="#CiC">Cilindro circular </a>
+			</li>
+			<li class="navUlLi">
+				<a href="#Tor">Torus </a>
+			</li>
 		</ul>
 
 		<p id="Es"> Esferas </p>
-		<ul>
-			<li>Esfera </li>
-			<li>Elipsoide </li>
+		<ul class="ulInfoContainer">
+			<li class="navUlLi">
+				<a href="#Es">Esfera </a>
+			</li>
+			<li class="navUlLi">
+				<a href="#Eli">Elipsoide </a>
+			</li>
 		</ul>
 	</nav>
 
-	<article>
-		<p> Aqui va la figura </p>
-	</article>
+	<aside>
+		<p>  Cual de todas quieres calcular? </p>
+		<div id="GContainer">
+			<table id="GContainer">
+				<tr>
+					<td id="TR">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Tri%C3%A1ngulo_equil%C3%A1tero.svg/200px-Tri%C3%A1ngulo_equil%C3%A1tero.svg.png" width="100" height=auto> 
+					</td>
+					<td id="CR"> 
+						<img src="https://cdnblog-199133.c.cdn77.org/blog/wp-content/uploads/cuadrado-222x201.png" width="100" height=auto> 
+					</td>
+					<td id="PR"> 
+						<img src="https://decagono.com/img/pentagono.png" width="100" height=auto> 
+					</td>
+				</tr>
+				<tr>
+					<td id="HR"> 
+						<img src="https://decagono.com/img/hexagono.png" width="100" height=auto> 
+					</td>
+					<td id="OR"> 
+						<img src="https://decagono.com/img/octagono.png" width="100" height=auto> 
+					</td>
+					<td id="DR"> 
+						<img src="https://decagono.com/img/decagono.png" width="100" height=auto> 
+					</td>
+				</tr>
+				<tr>
+					<td id="TI"> 
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Tri%C3%A1ngulo_acut%C3%A1ngulo_is%C3%B3sceles.svg/1024px-Tri%C3%A1ngulo_acut%C3%A1ngulo_is%C3%B3sceles.svg.png" width="100" height=auto> 
+						<img src="https://dr282zn36sxxg.cloudfront.net/datastreams/f-d%3A381d6e9dfd0d4f9ea2bc047193a847e836a2193cec5284be3516ca48%2BIMAGE%2BIMAGE.1" width="100" height=auto> 
+					</td>
+					<td id="Cua"> 
+						<img src="https://cdnblog-199133.c.cdn77.org/blog/wp-content/uploads/rombo-1.png" width="100" height=auto> 
+					</td>
+					<td id="PI"> 
+						<img src="https://trazoide.com/figura3/equivalencia--998a.gif" width="100" height=auto> 
+					</td>
+				</tr>
+			</table>
+		</div>
+	</aside>
 
 </section>
 
 <footer>
 	<p> Resultados de calculos: </p>
-
 </footer>
 
 

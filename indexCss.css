@@ -1,4 +1,8 @@
 /** Main tags (tag_name)  */
+* {
+    box-sizing: border-box;
+}
+
 header {
     background-color: #666;
     padding: 30px;
@@ -7,11 +11,77 @@ header {
     color: white;
 }
 
+nav {
+    float: left;
+    width: 20%;
+    background: #ccc;
+    padding: 5px;
+}
+
+nav p{
+	text-align: center;
+}
+
+aside {
+    float: left;
+    padding: 20px;
+    width: 80%;
+    height: ;
+    background-color: white;
+}
+
+aside p{
+	text-align: center;
+}
+table, th, td{
+	border: 1px solid black;
+	border-collapse:  collapse;
+}
+
+td{
+	text-align: center;
+}
+
+nav p{
+	border: 1px solid black;
+	font-size: 2vw;
+}
+
+nav ul{
+	list-style-type: none;
+    padding: 1px;
+    text-decoration: none;
+    border: 1px solid black;
+    font-size: 2vw;
+}
+
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+footer p{
+	font-size: 2vw;
+}
+
+@media (max-width: 600px) {
+    nav, section, article {
+        width: 100%;
+        height: auto;
+    }
+}
 
 /** Clases (.) */
 
 .MenuObject{
-	display: block;
     color: white;
     text-align: center;
     padding: 16px;
@@ -23,8 +93,9 @@ header {
 	text-decoration: none;
 }
 
-li.MenuObject a:hover{
-	background-color: blue;
+.navUlLi{
+    text-align: center;
+    text-decoration: none;
 }
 
 /** IDs (#) */
@@ -39,4 +110,8 @@ li.MenuObject a:hover{
 #liMenuFormat{
 	float: left;
 	font-size: 2vw;
+}
+
+#GContainer{
+	width: 100%;
 }
