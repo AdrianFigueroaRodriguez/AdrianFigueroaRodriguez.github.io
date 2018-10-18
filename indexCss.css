@@ -55,6 +55,10 @@ nav ul{
     font-size: 2vw;
 }
 
+nav ul li{
+	text-align: center;
+}
+
 section:after {
     content: "";
     display: table;
@@ -93,9 +97,10 @@ footer p{
 	text-decoration: none;
 }
 
-.navUlLi{
+.navUlLi a{
     text-align: center;
     text-decoration: none;
+    color: black;
 }
 
 /** IDs (#) */
