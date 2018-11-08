@@ -18,9 +18,10 @@ img{
 .default{
 	font-size: 25px;
 	font-style: sans-serif;
+	width: 100%;
 }
+
 .MenuContainer{
-	width: 100vw;
 	height: calc(100vw * (2.3/20));
 	background-color: green;
 }
@@ -43,7 +44,7 @@ img{
 	float: right;
 	margin: 2.8vw 0vw 2.8vw 0vw;
 	padding: 0vw 0vw 0vw 0vw;
-	width: 88vw;
+	width: 86vw;
 	text-align: center;
 	font-size: 3vw;
 	font-family: 'Gloria Hallelujah', cursive;
@@ -73,21 +74,19 @@ img{
 
 /** End of Menu Container **/
 
-#ulMenu{
-	padding: 0;
+.ulMenu{
+	padding: 0px;
+	margin: 0px;
+	width: 100vw;
 }
 
-#ulMenu li{
+.ulMenu li{
 	display: inline;
-}
-
-#ulMenu li{
-	
 	font-family: Arial;
- 	font-size: 11px;
+ 	font-size: 15px;
  	text-decoration: none;
  	float: left;
- 	padding: 10px;
+ 	padding: 30px;
  	background-color: #2175bc;
  	color: #fff;
  }

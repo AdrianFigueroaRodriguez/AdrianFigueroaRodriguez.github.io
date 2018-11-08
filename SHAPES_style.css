@@ -1,0 +1,86 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+img{
+	max-width: 100%;
+    max-height: 100%;
+    float: left;
+}
+
+h1{
+	margin: 0px;
+	padding: 0px;
+	font-size: 4vw;
+}
+span{
+	margin: 0px;
+	padding: 0px;
+}
+
+.head_box{
+	width: 100vw;
+	height: 9vw;
+	margin: 0px;
+	padding: 0px;
+	background-color: green;
+}
+
+.logo_box{
+	float: left;
+	position: relative;
+	top: 3vw;
+	left: 4vw;
+	width: 11vw;
+	height: 2vw;
+	margin: 0px;
+	padding: 0px;
+}
+
+.nom_pag{
+	float: left;
+	position: relative;
+	top: .25vw;
+	left: 15vw;
+	width: 50vw;
+	height: auto;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	font-family: 'Gloria Hallelujah', cursive;
+} 
+
+#c1, #a1, #l1{
+	color: red;
+}
+
+#c2, #u1, #l2{
+	color: orange;
+}
+
+#a2, #d1, #o1{
+	color: blue;
+}
+
+#r1, #d2, #e1{
+	color: purple;
+}
+
+#f1, #i1, #g1{
+	color: pink;
+}
+
+#u2, #r2, #a3{
+	color: purple;
+}
+
+#s1{
+	color: blue;
+}
