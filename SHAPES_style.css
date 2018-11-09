@@ -25,6 +25,10 @@ span{
 	padding: 0px;
 }
 
+button{
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
 .head_box{
 	width: 100vw;
 	height: 9vw;
@@ -84,3 +88,180 @@ span{
 #s1{
 	color: blue;
 }
+
+/* Navigation menu : Area */
+.NavMenu{
+	padding: 0vw;
+	margin: 0vw;
+	width: 100vw;
+	position: relative;
+	display: inline-block;
+}
+
+.DropDownBtnA{
+	background-color: #2175bc;
+	color: white;
+	margin: 0vw;
+	padding: 1.5vw 13vw 1.5vw 13vw;
+	font-size: 2vw;
+	border: none;
+	cursor: pointer;
+	width: 33.33vw;
+	float: left;
+}
+
+.DropDownBtnA:hover, .DropDownBtnA:focus{
+	background-color: #2980B9;
+}
+
+.DropDownContentA{
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 2vw;
+	z-index: 1;
+}
+
+.DropDownContentA a{
+	color: black;
+	padding: 2vw 1vw;
+	text-decoration: none;
+	display: block;
+}
+
+.DropDownContentA a:hover {
+	background-color: #ddd;
+}
+
+.showA{
+	display: block;
+}
+
+/* Navigation Menu: Perimetro */
+.DropDownBtnP{
+	background-color: #2175bc;
+	color: #fff;
+	padding: 1.5vw 13vw 1.5vw 13vw;
+	font-size: 2vw;
+	border: none;
+	cursor: pointer;
+	width: 33.34vw;
+	float: left;
+}
+
+.DropDownBtnP:hover, .DropDownBtnP:focus{
+	background-color: #2980B9;
+}
+
+.DropDownContentP{
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 2vw;
+	z-index: 1;
+}
+
+.DropDownContentP a{
+	color: black;
+	padding: 2vw 1vw;
+	text-decoration: none;
+	display: block;
+}
+
+.DropDownContentP a:hover {
+	background-color: #ddd;
+}
+
+.showP{
+	display: block;
+}
+
+/* Navigation Menu : Volumen */
+.DropDownBtnV{
+	background-color: #2175bc;
+	color: #fff;
+	margin: 0vw;
+	padding: 1.5vw 13vw 1.5vw 13vw;
+	font-size: 2vw;
+	border: none;
+	cursor: pointer;
+	width: 33.33vw;
+	float: left;
+}
+
+.DropDownBtnV:hover, .DropDownBtnV:focus{
+	background-color: #2980B9;
+}
+
+.DropDownContentV{
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 2vw;
+	z-index: 1;
+}
+
+.DropDownContentV a{
+	color: black;
+	padding: 2vw 1vw;
+	text-decoration: none;
+	display: block;
+}
+
+.DropDownContentV a:hover {
+	background-color: #ddd;
+}
+
+.showV{
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#NavMenu{
+	padding: 0vw;
+	margin: 0vw;
+	width: 100vw;
+}
+
+#NavMenu li{
+	font-family: 'Gloria Hallelujah', cursive;
+ 	
+ 	text-decoration: none;
+ 	float: left;
+
+}
+
+.NavMenuObjectArea{
+	width: 33.33vw;
+}
+
+.NavMenuObjectPerimetro{
+	width: 33.33vw;
+}
+
+.NavMenuObjectVolumen{
+	width: 33.33vw;
+}
+
+
+
+
+
+
+
+
