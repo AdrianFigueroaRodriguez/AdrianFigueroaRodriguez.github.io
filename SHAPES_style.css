@@ -116,9 +116,12 @@ button{
 
 .DropDownContentA{
 	display: none;
+	float: left;
 	position: absolute;
+	margin: 7vw 0vw 0vw 0vw;
 	background-color: #f1f1f1;
-	min-width: 2vw;
+	min-width: 33.33vw;
+	overflow: auto;
 	z-index: 1;
 }
 
@@ -133,8 +136,12 @@ button{
 	background-color: #ddd;
 }
 
-.showA{
-	display: block;
+.NavMenu a:hover {
+	background-color: #dd;
+}
+
+.show{
+	display:block;
 }
 
 /* Navigation Menu: Perimetro */
@@ -172,7 +179,7 @@ button{
 	background-color: #ddd;
 }
 
-.showP{
+.show{
 	display: block;
 }
 
@@ -212,7 +219,7 @@ button{
 	background-color: #ddd;
 }
 
-.showV{
+.show{
 	display: block;
 }
 
