@@ -2,6 +2,14 @@
 	box-sizing: border-box;
 }
 
+a{
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 1.5vw;
+	text-align: center;
+	width: 33.33vw;
+	height: auto;
+}
+
 body{
 	margin: 0px;
 	padding: 0px;
@@ -162,9 +170,11 @@ button{
 
 .DropDownContentP{
 	display: none;
+	float: left;
 	position: absolute;
+	margin: 7vw 0vw 0vw 33.33vw;
 	background-color: #f1f1f1;
-	min-width: 2vw;
+	min-width: 33.34vw;
 	z-index: 1;
 }
 
@@ -187,7 +197,7 @@ button{
 .DropDownBtnV{
 	background-color: #2175bc;
 	color: #fff;
-	margin: 0vw;
+	margin: 0;
 	padding: 1.5vw 13vw 1.5vw 13vw;
 	font-size: 2vw;
 	border: none;
@@ -203,8 +213,10 @@ button{
 .DropDownContentV{
 	display: none;
 	position: absolute;
+	float: left;
+	margin: 7vw 0vw 0vw 66.67vw;
 	background-color: #f1f1f1;
-	min-width: 2vw;
+	min-width: 33.33vw;
 	z-index: 1;
 }
 
@@ -223,52 +235,59 @@ button{
 	display: block;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#NavMenu{
-	padding: 0vw;
+.objContainer{
 	margin: 0vw;
+	padding: 0vw;
+	position: relative;
+	float: left;
 	width: 100vw;
+	height: 70vw;
 }
 
-#NavMenu li{
+.mostradorContenido{
+	border: 1vw solid black;
+	float: left;
+	margin: 2vw;
+	padding: 2vw;
+	width: 94vw;
+	height: 64vw;
+}
+
+.objCalculador{
+	margin: 1vw 0vw 0vw 0vw;
+	padding: 0vw;
+	position: relative;
+	float: left;
+	width: 100vw;
+	height: 10vw;
+}
+
+.mostradorCalculador{
+	border: 1vw solid black;
+	float: left;
+	margin: 1vw 1vw 1vw 2vw;
+	padding: 0vw;
+	width: 80vw;
+	height: 6vw;
+}
+
+.mostradorBoton{
+	border: 1vw solid black;
+	float: left;
+	margin: 1vw 1vw 1vw 1vw;
+	padding: 0vw;
+	width: 12vw;
+	height: 6vw;
+}
+
+.mostradorCalculador p{
+	margin: .5vw;
 	font-family: 'Gloria Hallelujah', cursive;
- 	
- 	text-decoration: none;
- 	float: left;
-
+	text-align: left;
 }
 
-.NavMenuObjectArea{
-	width: 33.33vw;
+.mostradorBoton p{
+	font-family: 'Gloria Hallelujah', cursive;
+	text-align: center;
+	margin: .5vw;
 }
-
-.NavMenuObjectPerimetro{
-	width: 33.33vw;
-}
-
-.NavMenuObjectVolumen{
-	width: 33.33vw;
-}
-
-
-
-
-
-
-
-

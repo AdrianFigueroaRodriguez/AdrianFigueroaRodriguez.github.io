@@ -10,6 +10,7 @@
 	<script type="text/javascript" src="SHAPES_js.js"></script>
 </head>		
 <body>
+	<!-- Header -->
 	<div class="head_box">
 		<!-- Logo container-->
 		<div class="logo_box">
@@ -29,15 +30,46 @@
 			<div id="DropDownMenuA" class="DropDownContentA">
 				<a href="#Area-Cuadrado"> Cuadrado</a>
 				<a href="#Area-Circulo"> Circulo</a>
+				<a href="#Area-Triangulo"> Triangulo </a>
+				<a href="#Area-Rectangulo"> Rectangulo </a>
+				<a href="#Area-Rombo"> Rombo </a>
+				<a href="#Area-Romboide"> Romboide </a>
+				<a href="#Area-Trapecio"> Trapecio </a>
 			</div>
 		<button onclick="mostrarContenidoP()" class="DropDownBtnP"> Perimetro </button>
 			<div id="DropDownMenuP" class="DropDownContentP">
-				<a href="#P"> </a>
+				<a href="#Perimetro-Cuadrado"> Cuadrado</a>
+				<a href="#Perimetro-Triangulo"> Triangulo </a>
+				<a href="#Perimetro-Rectangulo"> Rectangulo </a>
+				<a href="#Perimetro-Rombo"> Rombo </a>
+				<a href="#Perimetro-Romboide"> Romboide </a>
+				<a href="#Perimetro-Trapecio"> Trapecio </a>
 			</div>
 		<button onclick="mostrarContenidoV()" class="DropDownBtnV"> Volumen </button>
 			<div id="DropDownMenuV" class="DropDownContentV">
-				<a href="#V"> </a>
+				<a href="#Volumen-Cubo"> Cubo </a>
+				<a href="#Volumen-Prisma"> Prisma </a>
+				<a href="#Volumen-Piramide"> Piramide </a>
+				<a href="#Volumen-Cilindro"> Cilindro </a>
+				<a href="#Volumen-Cono"> Cono </a>
+				<a href="#Volumen-Esfera"> Esfera </a>
 			</div>
+	</div>
+
+	<div class="objContainer">
+		<div class="mostradorContenido">
+			
+		</div>
+	</div>
+
+	<div class="objCalculador">
+		<div class="mostradorCalculador" id="oCmCobjetos">
+			<p> # de objeto que se va sumar </p>
+		</div>
+
+		<div class="mostradorBoton">
+			<p> calcular </p>
+		</div>
 	</div>
 </body>
 </html>
