@@ -11,7 +11,7 @@ function mostrarContenidoV() {
 }
 
 window.onclick = function(e) {
-  if (!e.target.matches('.DropDownBtnA') &&
+  if (!e.target.matches('.DropDownBtnA') && 
 	  !e.target.matches('.DropDownBtnP') &&
 	  !e.target.matches('.DropDownBtnV')) {
 	    var myDropdownA = document.getElementById("DropDownMenuA");
@@ -26,3 +26,9 @@ window.onclick = function(e) {
 	      }
   }
 }
+
+
+
+
+
+
