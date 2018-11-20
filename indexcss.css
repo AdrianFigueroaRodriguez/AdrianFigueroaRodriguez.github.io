@@ -30,6 +30,13 @@ img{
     float: left;
 }
 
+select{
+	float: left;
+	position: relative;
+	margin-top: 2.3vw;
+	margin-left: 2vw;
+}
+
 h1{
 	margin: 0px;
 	padding: 0px;
@@ -38,6 +45,9 @@ h1{
 span{
 	margin: 0px;
 	padding: 0px;
+}
+input{
+	font-family: 'Gloria Hallelujah', cursive;
 }
 
 button{
@@ -66,9 +76,6 @@ button{
 	padding: 0px;
 	background-size: 100%;
 	background-repeat: no-repeat;
-}
-
-#idlogo_box{
 	background-image: url(Shapes_logo.png);
 }
 
@@ -384,6 +391,16 @@ button{
 	background-image: url(fTrapecio.jpg);
 	background-size: 60%;
 }
+
+#resultado{
+	float: right;
+	width: 8vw;
+}
+
+#tb1, #tb2, #tb3, #sperator1, #sperator2{
+	display:  none;
+}
+
 
 #limpiar{
 	background-color: #2175bc;

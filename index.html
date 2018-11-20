@@ -13,7 +13,7 @@
 	<!-- Header -->
 	<div class="head_box">
 		<!-- Logo container-->
-		<div class="logo_box" id="idlogo_box">
+		<div class="logo_box">
 			<!-- Logo -->	
 		</div>
 		<!-- Nombre container -->
@@ -35,35 +35,35 @@
 			<table id="tbl_obj">
 				<tr>
 					<td id="obj1"> 
-						<button id="bobj1"> Cuadrado </button> 
+						<input type="button" id="bobj1" onclick="comando(1),vista(1)" value="Cuadrado">
 					</td>
 					<td id="obj2"> 
-						<button id="bobj2"> Circulo </button>  
+						<input type="button" id="bobj2" onclick="comando(2),vista(2)" value="Circulo">
 					</td>
 					<td id="obj3">   
-						<button id="bobj3"> Triangulo </button> 
+						<input type="button" id="bobj3" onclick="comando(3),vista(3)" value="Triangulo">
 					</td>
 				</tr>
 				<tr>
 					<td id="obj4"> 
-						<button id="bobj4"> Rectangulo </button> 
+						<input type="button" id="bobj4" onclick="comando(4),vista(4)" value="Rectangulo"> 
 					</td>
 					<td id="obj5">   
-						<button id="bobj5"> Rombo </button> 
+						<input type="button" id="bobj5" onclick="comando(5),vista(5)" value="Rombo"> 
 					</td>
 					<td id="obj6">
-						<button id="bobj6"> Romboide </button> 
+						<input type="button" id="bobj6" onclick="comando(6),vista(6)" value="Romboide"> 
 					</td>
 				</tr>
 				<tr>
 					<td id="obj7">
-						<button id="bobj7"> Trapecio </button> 
+						<input type="button" id="bobj7" onclick="comando(7),vista(7)" value="Trapecio"> 
 					</td>
 					<td id="obj8">
-						<button id="bobj8">  </button>
+						<input type="button" id="bobj8" onclick="comando(8),vista(8)" value="">
 				    </td>
 					<td id="obj9">
-						<button id="bobj9">  </button> 
+						<input type="button" id="bobj9" onclick="comando(9),vista(9)" value=""> 
 				   </td>
 				</tr>
 
@@ -72,30 +72,44 @@
 	</div>
 
 	<div class="objCalculador">
-		<div class="mostradorCalculador">
+		<div class="mostradorCalculador" >
 			<p> Objetos: </p>
-			<p> Cuadrado </p>
-			<input type="text" name="txtbx1">
-			<p id="sperator">x</p>
-			<input type="text" name="txtbx2">
-			<p> Circulo </p>
-			<input type="text" name="txtbx3">
-			<p id="sperator">x</p>
-			<input type="text" name="txtbx4">
-			<p> Prisma </p>
-			<input type="text" name="txtbx5">
-			<p id="sperator">x</p>
-			<input type="text" name="txtbx6">
-			<p id="sperator">x</p>
-			<input type="text" name="txtbx7">
+
+			<select id="opc1">
+				<option value=""> </option>
+				<option value="Cuadrado">Cuadrado </option>
+				<option value="Circulo">Circulo </option>
+				<option value="Triangulo">Triangulo </option>
+				<option value="Rectangulo">Rectangulo </option>
+				<option value="Rombo">Rombo </option>
+				<option value="Romboide">Romboide </option>
+				<option value="Trapecio">Trapecio </option>
+				<option value="Cubo">Cubo </option>
+				<option value="Prisma">Prisma </option>
+				<option value="Piramide">Piramide </option>
+				<option value="Cilindro">Cilindro </option>
+				<option value="Cono">Cono </option>
+				<option value="Esfera">Esfera </option>
+			</select>
+
+			<input type="text" name="txtbx1" id="tb1">
+			<p id="sperator1">x</p>
+			<input type="text" name="txtbx2" id="tb2">
+			<p id="sperator2">x</p>
+			<input type="text" name="txtbx3" id="tb3">
+
+			<input type="text" name="txtbx3" id="resultado">
+
 		</div>
-			
+
+
+
 		<div class="limpiarBoton"> 
-			<button id="limpiar"> Limpiar </button>
+			<button id="limpiar" onclick="limpiar()"> Limpiar </button>
 		</div>
 
 		<div class="mostradorBoton">
-			<button id="calcular"> Calcular</button>
+			<button id="calcular" onclick="calculate()"> Calcular</button>
 		</div>
 	</div>
 </body>
