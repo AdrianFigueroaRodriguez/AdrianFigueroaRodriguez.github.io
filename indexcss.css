@@ -16,7 +16,7 @@ body{
 }
 
 td{
-	border: 1px solid black;
+
 	padding: 1vw;
 	width: 32vw;
 	height: 19vw;
@@ -42,6 +42,9 @@ span{
 
 button{
 	font-family: 'Gloria Hallelujah', cursive;
+	max-width: 100%;
+	max-height: 100%;
+	float: left;
 }
 
 .head_box{
@@ -162,7 +165,8 @@ button{
 /* Navigation Menu: Perimetro */
 .DropDownBtnP{
 	background-color: #2175bc;
-	color: #fff;
+	color: white;
+	margin: 0vw;
 	padding: 1.5vw 13vw 1.5vw 13vw;
 	font-size: 2vw;
 	border: none;
@@ -203,8 +207,8 @@ button{
 /* Navigation Menu : Volumen */
 .DropDownBtnV{
 	background-color: #2175bc;
-	color: #fff;
-	margin: 0;
+	color: white;
+	margin: 0vw;
 	padding: 1.5vw 13vw 1.5vw 13vw;
 	font-size: 2vw;
 	border: none;
@@ -256,7 +260,7 @@ button{
 	float: left;
 	margin: 2vw;
 	padding: 2vw;
-	width: 96vw;
+	width: 94vw;
 	height: 64vw;
 }
 
@@ -270,16 +274,35 @@ button{
 }
 
 .mostradorCalculador{
-	border: 1vw solid black;
+
 	float: left;
 	margin: 1vw 1vw 1vw 2vw;
 	padding: 0vw;
-	width: 68vw;
-	height: 6vw;
+	width: 66vw;
+	height: 8vw;
+	position: relative;
+	text-align: center;
+}
+
+.mostradorCalculador p{
+	margin: 1.5vw .5vw .5vw .5vw;
+	font-family: 'Gloria Hallelujah', cursive;
+	text-align: left;
+	font-size: 1.8vw;
+	position: relative;
+	float: left;
+}
+
+.mostradorCalculador input{
+	position: relative;
+	float: left;
+	margin: 1.5vw .5vw .5vw .5vw;
+	height: 3vw;	
+	width: 3vw;
+	text-align: center;
 }
 
 .limpiarBoton{
-	border: 1vw solid black;
 	float: left;
 	margin: 1vw 1vw 1vw 1vw;
 	padding: 0vw;
@@ -294,7 +317,7 @@ button{
 }
 
 .mostradorBoton{
-	border: 1vw solid black;
+
 	float: left;
 	margin: 1vw 1vw 1vw 1vw;
 	padding: 0vw;
@@ -302,14 +325,97 @@ button{
 	height: 6vw;
 }
 
-.mostradorCalculador p{
-	margin: .5vw;
-	font-family: 'Gloria Hallelujah', cursive;
-	text-align: left;
-}
-
 .mostradorBoton p{
 	font-family: 'Gloria Hallelujah', cursive;
 	text-align: center;
 	margin: .5vw;
 }
+
+#bobj1, #bobj2, #bobj3, #bobj4, #bobj5, #bobj6, #bobj7, #bobj8, #bobj9{
+	background-position: right;
+	background-repeat: no-repeat;
+	background-color: white;
+	border: none;
+	width: 100%;
+	height: 100%;
+	font-size: 2vw;
+	font-weight: bold;
+	text-align: left;
+	color: red;
+}
+
+#bobj1{
+	background-image: url(fCuadrado.jpg);	
+	background-size: 60%;
+}
+
+#bobj2{
+	background-image: url(fCirculo.jpg);
+	background-size: 60%;
+}
+
+#bobj3{
+	background-image: url(fTriangulo.jpg);
+	background-size: 60%;
+}
+
+#bobj4{
+	background-image: url(fRectangulo.jpg);
+	background-size: 60%;
+}
+
+#bobj5{
+	background-image: url(fRombo.jpg);
+	background-size: 60%;
+}
+
+#bobj6{
+	background-image: url(fRomboide.jpg);
+	background-size: 60%;
+}
+
+#bobj7{
+	background-image: url(fTrapecio.jpg);
+	background-size: 60%;
+}
+
+#limpiar{
+	background-color: #2175bc;
+	color: white;
+	margin: 0vw;
+	font-size: 2.3vw;
+	border: none;
+	cursor: pointer;
+	float: left;
+	width: 100%;
+	height: 100%;
+}
+
+#calcular{
+	background-color: #2175bc;
+	color: white;
+	margin: 0vw;
+	font-size: 2.3vw;
+	border: none;
+	cursor: pointer;
+	float: left;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

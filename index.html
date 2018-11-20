@@ -27,52 +27,45 @@
 	<!-- Navegador de menu -->
 	<div class="NavMenu">
 		<button onclick="mostrarContenidoA()" class="DropDownBtnA"> Area </button>
-			<div id="DropDownMenuA" class="DropDownContentA">
-				<a href="#Area-Cuadrado"> Cuadrado</a>
-				<a href="#Area-Circulo"> Circulo</a>
-				<a href="#Area-Triangulo"> Triangulo </a>
-				<a href="#Area-Rectangulo"> Rectangulo </a>
-				<a href="#Area-Rombo"> Rombo </a>
-				<a href="#Area-Romboide"> Romboide </a>
-				<a href="#Area-Trapecio"> Trapecio </a>
-			</div>
 		<button onclick="mostrarContenidoP()" class="DropDownBtnP"> Perimetro </button>
-			<div id="DropDownMenuP" class="DropDownContentP">
-				<a href="#Perimetro-Cuadrado"> Cuadrado</a>
-				<a href="#Perimetro-Triangulo"> Triangulo </a>
-				<a href="#Perimetro-Rectangulo"> Rectangulo </a>
-				<a href="#Perimetro-Rombo"> Rombo </a>
-				<a href="#Perimetro-Romboide"> Romboide </a>
-				<a href="#Perimetro-Trapecio"> Trapecio </a>
-			</div>
 		<button onclick="mostrarContenidoV()" class="DropDownBtnV"> Volumen </button>
-			<div id="DropDownMenuV" class="DropDownContentV">
-				<a href="#Volumen-Cubo"> Cubo </a>
-				<a href="#Volumen-Prisma"> Prisma </a>
-				<a href="#Volumen-Piramide"> Piramide </a>
-				<a href="#Volumen-Cilindro"> Cilindro </a>
-				<a href="#Volumen-Cono"> Cono </a>
-				<a href="#Volumen-Esfera"> Esfera </a>
-			</div>
 	</div>
 
 	<div class="objContainer">
 		<div class="mostradorContenido">
-			<table>
+			<table id="tbl_obj">
 				<tr>
-					<td id="obj1"> Object1 </td>
-					<td id="obj2"> Object2 </td>
-					<td id="obj3"> Object3 </td>
+					<td id="obj1"> 
+						<button id="bobj1"> Cuadrado </button> 
+					</td>
+					<td id="obj2"> 
+						<button id="bobj2"> Circulo </button>  
+					</td>
+					<td id="obj3">   
+						<button id="bobj3"> Triangulo </button> 
+					</td>
 				</tr>
 				<tr>
-					<td id="obj4"> Object1 </td>
-					<td id="obj5"> Object2 </td>
-					<td id="obj6"> Object3 </td>
+					<td id="obj4"> 
+						<button id="bobj4"> Rectangulo </button> 
+					</td>
+					<td id="obj5">   
+						<button id="bobj5"> Rombo </button> 
+					</td>
+					<td id="obj6">
+						<button id="bobj6"> Romboide </button> 
+					</td>
 				</tr>
 				<tr>
-					<td id="obj7"> Object1 </td>
-					<td id="obj8"> Object2 </td>
-					<td id="obj9"> Object3 </td>
+					<td id="obj7">
+						<button id="bobj7"> Trapecio </button> 
+					</td>
+					<td id="obj8">
+						<button id="bobj8">  </button>
+				    </td>
+					<td id="obj9">
+						<button id="bobj9">  </button> 
+				   </td>
 				</tr>
 
 			</table>		
@@ -80,17 +73,30 @@
 	</div>
 
 	<div class="objCalculador">
-		<div class="mostradorCalculador" id="oCmCobjetos">
-			<p> # de objeto que se va sumar </p>
+		<div class="mostradorCalculador">
+			<p> Objetos: </p>
+			<p> Cuadrado </p>
+			<input type="text" name="txtbx1">
+			<p id="sperator">x</p>
+			<input type="text" name="txtbx2">
+			<p> Circulo </p>
+			<input type="text" name="txtbx3">
+			<p id="sperator">x</p>
+			<input type="text" name="txtbx4">
+			<p> Prisma </p>
+			<input type="text" name="txtbx5">
+			<p id="sperator">x</p>
+			<input type="text" name="txtbx6">
+			<p id="sperator">x</p>
+			<input type="text" name="txtbx7">
 		</div>
-
+			
 		<div class="limpiarBoton"> 
-			<p> Limpiar </p>
-
+			<button id="limpiar"> Limpiar </button>
 		</div>
 
 		<div class="mostradorBoton">
-			<p> calcular </p>
+			<button id="calcular"> Calcular</button>
 		</div>
 	</div>
 </body>
