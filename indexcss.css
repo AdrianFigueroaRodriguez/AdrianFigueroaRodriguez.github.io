@@ -47,7 +47,9 @@ span{
 	padding: 0px;
 }
 input{
-	font-family: 'Gloria Hallelujah', cursive;
+	font-family: Arial;
+	font-size: 2vw;
+	width: 6vw;
 }
 
 button{
@@ -355,52 +357,60 @@ button{
 	font-weight: bold;
 	text-align: left;
 	color: red;
+	font-family: 'Gloria Hallelujah', cursive;
 }
 
 #bobj1{
 	background-image: url(fCuadrado.jpg);	
-	background-size: 60%;
+	background-size: 40%;
 }
 
-#bobj2{
+#bobj2{	
 	background-image: url(fCirculo.jpg);
-	background-size: 60%;
+	background-size: 40%;
 }
 
 #bobj3{
 	background-image: url(fTriangulo.jpg);
-	background-size: 60%;
+	background-size: 40%;
 }
 
 #bobj4{
 	background-image: url(fRectangulo.jpg);
-	background-size: 60%;
+	background-size: 40%;
 }
 
 #bobj5{
 	background-image: url(fRombo.jpg);
-	background-size: 60%;
+	background-size: 40%;
 }
 
 #bobj6{
 	background-image: url(fRomboide.jpg);
-	background-size: 60%;
+	background-size: 40%;
 }
 
 #bobj7{
 	background-image: url(fTrapecio.jpg);
-	background-size: 60%;
+	background-size: 40%;
+}
+#resEq{
+
+	position: relative;
 }
 
 #resultado{
 	float: right;
-	width: 8vw;
+	width: 9vw;
 }
 
 #tb1, #tb2, #tb3, #sperator1, #sperator2{
 	display:  none;
 }
 
+#tb1, #tb2, #tb3{
+	width: 7vw;
+}
 
 #limpiar{
 	background-color: #2175bc;

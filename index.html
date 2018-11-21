@@ -35,29 +35,36 @@
 			<table id="tbl_obj">
 				<tr>
 					<td id="obj1"> 
-						<input type="button" id="bobj1" onclick="comando(1),vista(1)" value="Cuadrado">
+						<input type="button" id="bobj1" onclick="comando(1),vista(1)" value="Area 
+Cuadrado">
 					</td>
 					<td id="obj2"> 
-						<input type="button" id="bobj2" onclick="comando(2),vista(2)" value="Circulo">
+						<input type="button" id="bobj2" onclick="comando(2),vista(2)" value="Area 
+Circulo">
 					</td>
 					<td id="obj3">   
-						<input type="button" id="bobj3" onclick="comando(3),vista(3)" value="Triangulo">
+						<input type="button" id="bobj3" onclick="comando(3),vista(3)" value="Area 
+Triangulo">
 					</td>
 				</tr>
 				<tr>
 					<td id="obj4"> 
-						<input type="button" id="bobj4" onclick="comando(4),vista(4)" value="Rectangulo"> 
+						<input type="button" id="bobj4" onclick="comando(4),vista(4)" value="Area 
+Rectangulo"> 
 					</td>
 					<td id="obj5">   
-						<input type="button" id="bobj5" onclick="comando(5),vista(5)" value="Rombo"> 
+						<input type="button" id="bobj5" onclick="comando(5),vista(5)" value="Area 
+Rombo"> 
 					</td>
 					<td id="obj6">
-						<input type="button" id="bobj6" onclick="comando(6),vista(6)" value="Romboide"> 
+						<input type="button" id="bobj6" onclick="comando(6),vista(6)" value="Area 
+Romboide"> 
 					</td>
 				</tr>
 				<tr>
 					<td id="obj7">
-						<input type="button" id="bobj7" onclick="comando(7),vista(7)" value="Trapecio"> 
+						<input type="button" id="bobj7" onclick="comando(7),vista(7)" value="Area 
+Trapecio"> 
 					</td>
 					<td id="obj8">
 						<input type="button" id="bobj8" onclick="comando(8),vista(8)" value="">
@@ -77,13 +84,35 @@
 
 			<select id="opc1">
 				<option value=""> </option>
-				<option value="Cuadrado">Cuadrado </option>
-				<option value="Circulo">Circulo </option>
-				<option value="Triangulo">Triangulo </option>
-				<option value="Rectangulo">Rectangulo </option>
-				<option value="Rombo">Rombo </option>
-				<option value="Romboide">Romboide </option>
-				<option value="Trapecio">Trapecio </option>
+				<option value="Area 
+Cuadrado">Area Cuadrado</option>
+				<option value="Perimetro 
+Cuadrado">Perimetro Cuadrado </option>
+
+				<option value="Area 
+Circulo">Area Circulo </option>
+
+				<option value="Area 
+Triangulo">Area Triangulo </option>
+				<option value="Perimetro 
+Triangulo">Perimetro Triangulo </option>
+				<option value="Area 
+Rectangulo">Area Rectangulo </option>
+				<option value="Perimetro 
+Rectangulo">Perimetro Rectangulo </option>
+				<option value="Area 
+Rombo">Area Rombo </option>
+				<option value="Perimetro 
+Rombo">Perimetro Rombo </option>
+				<option value="Area 
+Romboide">Area Romboide </option>
+				<option value="Perimetro 
+Romboide">Perimetro Romboide </option>
+				<option value="Area 
+Trapecio">Area Trapecio </option>
+				<option value="Perimetro 
+Trapecio">Perimetro Trapecio </option>
+
 				<option value="Cubo">Cubo </option>
 				<option value="Prisma">Prisma </option>
 				<option value="Piramide">Piramide </option>
@@ -97,19 +126,16 @@
 			<input type="text" name="txtbx2" id="tb2">
 			<p id="sperator2">x</p>
 			<input type="text" name="txtbx3" id="tb3">
-
+			<p id="resEq"> = </p>
 			<input type="text" name="txtbx3" id="resultado">
-
 		</div>
-
-
 
 		<div class="limpiarBoton"> 
 			<button id="limpiar" onclick="limpiar()"> Limpiar </button>
 		</div>
 
 		<div class="mostradorBoton">
-			<button id="calcular" onclick="calculate()"> Calcular</button>
+			<button id="calcular" onclick="calculate(document.getElementById('opc1').value)"> Calcular</button>
 		</div>
 	</div>
 </body>
