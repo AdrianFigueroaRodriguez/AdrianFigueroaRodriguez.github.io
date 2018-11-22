@@ -394,9 +394,8 @@ button{
 	background-image: url(fTrapecio.jpg);
 	background-size: 40%;
 }
-#resEq{
-
-	position: relative;
+#resEq
+	positon: relative;
 }
 
 #resultado{
