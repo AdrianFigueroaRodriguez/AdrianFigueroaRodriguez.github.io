@@ -1,179 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARF v6 - Adaptive Regime Framework</title>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&family=Roboto+Mono:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ARF v6 — Adaptive Regime Framework · NBA Analytics Dashboard · Monte Carlo Simulation · Parlay Analysis">
+  <meta name="theme-color" content="#070c13">
+  <title>ARF v6 · Adaptive Regime Framework</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <!-- HEADER -->
-        <header>
-            <div class="title">
-                <span class="arf">ARF</span>
-                <span class="v6">v6</span>
-                <span class="subtitle">ADAPTIVE REGIME FRAMEWORK · MAR 8–14 DEBRIEF → MAR 15 FORWARD SIM · SPORTRADAR LIVE</span>
+  <div id="app">
+
+    <!-- ── HEADER ───────────────────────────────────────────── -->
+    <header id="header" role="banner">
+      <div class="header-top">
+        <div class="arf-logo" aria-label="ARF v6">ARF <span>v6</span></div>
+        <div>
+          <div class="arf-subtitle">Adaptive Regime Framework · Mar 8–14 Debrief → Mar 15 Forward Sim · SportRadar Live</div>
+          <div class="header-kpis" role="list" aria-label="Dashboard KPIs">
+            <div class="kpi-chip" role="listitem">
+              <div class="kpi-dot" style="background:#60a5fa" aria-hidden="true"></div>
+              <span class="kpi-label" style="color:#60a5fa">7,000 Trials/Game</span>
             </div>
-            <div class="stats">
-                <div class="stat"><div class="dot" style="background: #60a5fa;"></div><span>7,000 Trials/Game</span></div>
-                <div class="stat"><div class="dot" style="background: #34d399;"></div><span>8 Games Tomorrow</span></div>
-                <div class="stat"><div class="dot" style="background: #fbbf24;"></div><span>17 Active Rules</span></div>
-                <div class="stat"><div class="dot" style="background: #f87171;"></div><span>4 New/Elevated Rules</span></div>
-                <div class="stat"><div class="dot" style="background: #4ade80;"></div><span>Session 84% (44/52)</span></div>
-                <div class="stat"><div class="dot" style="background: #f87171;"></div><span>🔴 2 LIVE NOW</span></div>
+            <div class="kpi-chip" role="listitem">
+              <div class="kpi-dot" style="background:#34d399" aria-hidden="true"></div>
+              <span class="kpi-label" style="color:#34d399" id="kpi-games">8 Games Today</span>
             </div>
-        </header>
-
-        <!-- TABS -->
-        <nav class="tabs">
-            <button class="tab active" data-tab="debrief">◎ Debrief</button>
-            <button class="tab" data-tab="mc">⬡ Monte Carlo</button>
-            <button class="tab" data-tab="parlay">◈ Parlay Scout</button>
-            <button class="tab" data-tab="lab">◇ Parlay Lab</button>
-            <button class="tab" data-tab="fw">⊕ Framework v5</button>
-        </nav>
-
-        <!-- TAB CONTENT -->
-        <main id="tab-content">
-            <!-- Debrief Tab -->
-            <div id="debrief" class="tab-content active">
-                <div class="day-selector">
-                    <button class="day-btn active" data-day="14">MAR 14</button>
-                    <button class="day-btn" data-day="13">MAR 13</button>
-                    <button class="day-btn" data-day="12">MAR 12</button>
-                    <button class="day-btn" data-day="11">MAR 11</button>
-                    <button class="day-btn" data-day="10">MAR 10</button>
-                    <button class="day-btn" data-day="9">MAR 9</button>
-                    <button class="day-btn" data-day="8">MAR 8</button>
-                </div>
-
-                <div class="day-summary">
-                    <div class="summary-header">
-                        <div>
-                            <span class="summary-title">MAR 14 · 4/4 CORRECT</span>
-                            <span class="summary-note">AM/PM sweep · Evening: ORL upset + DEN road TBD</span>
-                        </div>
-                        <div class="tag" style="background: #4ade80;">PERFECT ✓</div>
-                    </div>
-                    <div class="cumulative">
-                        <span class="cum-label">CUMULATIVE</span>
-                        <span class="cum-value">44/52 <span class="cum-pct">(84%)</span></span>
-                    </div>
-                </div>
-
-                <div id="games-list">
-                    <!-- Games will be populated by JavaScript -->
-                </div>
-
-                <!-- Live Games Panel -->
-                <div class="live-panel">
-                    <div class="live-header">
-                        <div class="pulse"></div>
-                        <span class="live-title">LIVE · MAR 14 EVENING</span>
-                        <span class="live-note">SportRadar feed · Last poll ~8pm MDT</span>
-                    </div>
-                    <div id="live-games">
-                        <!-- Live games will be populated by JavaScript -->
-                    </div>
-                </div>
-
-                <!-- Session Totals -->
-                <div class="session-grid">
-                    <div class="session-card active" data-day="14">
-                        <div class="card-label">MAR 14</div>
-                        <div class="card-score">4/4</div>
-                        <div class="card-pct">100%</div>
-                        <div class="card-tag" style="color: #4ade80;">PERFECT ✓</div>
-                    </div>
-                    <div class="session-card" data-day="13">
-                        <div class="card-label">MAR 13</div>
-                        <div class="card-score">7/8</div>
-                        <div class="card-pct">88%</div>
-                        <div class="card-tag" style="color: #60a5fa;">1 MISS</div>
-                    </div>
-                    <div class="session-card" data-day="12">
-                        <div class="card-label">MAR 12</div>
-                        <div class="card-score">8/9</div>
-                        <div class="card-pct">89%</div>
-                        <div class="card-tag" style="color: #60a5fa;">1 MISS</div>
-                    </div>
-                    <div class="session-card" data-day="11">
-                        <div class="card-label">MAR 11</div>
-                        <div class="card-score">6/6</div>
-                        <div class="card-pct">100%</div>
-                        <div class="card-tag" style="color: #4ade80;">PERFECT 🔥</div>
-                    </div>
-                    <div class="session-card" data-day="10">
-                        <div class="card-label">MAR 10</div>
-                        <div class="card-score">10/11</div>
-                        <div class="card-pct">91%</div>
-                        <div class="card-tag" style="color: #60a5fa;">1 UPSET</div>
-                    </div>
-                    <div class="session-card" data-day="9">
-                        <div class="card-label">MAR 9</div>
-                        <div class="card-score">5/8</div>
-                        <div class="card-pct">63%</div>
-                        <div class="card-tag" style="color: #fbbf24;">3 UPSETS</div>
-                    </div>
-                    <div class="session-card" data-day="8">
-                        <div class="card-label">MAR 8</div>
-                        <div class="card-score">4/7</div>
-                        <div class="card-pct">57%</div>
-                        <div class="card-tag" style="color: #f87171;">4 UPSETS</div>
-                    </div>
-                </div>
-
-                <!-- Overall Session Banner -->
-                <div class="session-banner">
-                    <div>
-                        <div class="banner-title">OVERALL SESSION — MAR 8 THROUGH MAR 14 AM</div>
-                        <div class="banner-desc">44 correct / 52 games across 7 days · Rule framework: 17 active rules · 2 live games pending</div>
-                    </div>
-                    <div class="banner-right">
-                        <button class="compare-btn">⊞ COMPARE DAYS</button>
-                        <div class="accuracy">
-                            <div class="acc-label">ACCURACY</div>
-                            <div class="acc-value">84%</div>
-                        </div>
-                    </div>
-                </div>
+            <div class="kpi-chip" role="listitem">
+              <div class="kpi-dot" style="background:#fbbf24" aria-hidden="true"></div>
+              <span class="kpi-label" style="color:#fbbf24">17 Active Rules</span>
             </div>
-
-            <!-- Monte Carlo Tab -->
-            <div id="mc" class="tab-content">
-                <div class="mc-header">
-                    <h2>Monte Carlo Engine</h2>
-                    <p>7,000 trials per game · Gaussian sampling · Regime modifiers</p>
-                </div>
-                <div id="mc-games">
-                    <!-- MC results will be populated by JavaScript -->
-                </div>
+            <div class="kpi-chip" role="listitem">
+              <div class="kpi-dot" style="background:#f87171" aria-hidden="true"></div>
+              <span class="kpi-label" style="color:#f87171" id="kpi-new">— New/Elevated</span>
             </div>
-
-            <!-- Other tabs placeholder -->
-            <div id="parlay" class="tab-content">
-                <h2>Parlay Scout</h2>
-                <p>Coming soon...</p>
+            <div class="kpi-chip" role="listitem">
+              <div class="kpi-dot" style="background:#4ade80" aria-hidden="true"></div>
+              <span class="kpi-label" style="color:#4ade80">Session 84% (44/52)</span>
             </div>
-            <div id="lab" class="tab-content">
-                <h2>Parlay Lab</h2>
-                <p>Coming soon...</p>
+            <div class="live-badge" id="live-badge" role="status" aria-live="polite" style="display:none">
+              <div class="live-dot" aria-hidden="true"></div>
+              <span class="live-count">0 LIVE</span>
             </div>
-            <div id="fw" class="tab-content">
-                <h2>Framework v5</h2>
-                <p>Coming soon...</p>
-            </div>
-        </main>
+          </div>
+        </div>
+      </div>
+    </header>
 
-        <!-- FOOTER -->
-        <footer>
-            <span>ARF v6 · 7,000 MC trials/game · SportRadar live data · 17 active rules · Mar 14 2026</span>
-            <span>Analytical model only — not financial advice</span>
-        </footer>
-    </div>
+    <!-- ── NAV TABS ─────────────────────────────────────────── -->
+    <nav id="nav" role="tablist" aria-label="Dashboard sections">
+      <!-- Populated by app.js -->
+    </nav>
 
-    <script src="script.js"></script>
+    <!-- ── TAB PANELS ───────────────────────────────────────── -->
+    <main role="main">
+
+      <section id="panel-debrief" class="tab-panel" role="tabpanel"
+               aria-labelledby="tab-debrief" tabindex="0">
+        <!-- Populated by app.js -->
+      </section>
+
+      <section id="panel-mc" class="tab-panel" role="tabpanel"
+               aria-labelledby="tab-mc" tabindex="0">
+        <!-- Populated by app.js -->
+      </section>
+
+      <section id="panel-parlay" class="tab-panel" role="tabpanel"
+               aria-labelledby="tab-parlay" tabindex="0">
+        <!-- Populated by app.js -->
+      </section>
+
+      <section id="panel-lab" class="tab-panel" role="tabpanel"
+               aria-labelledby="tab-lab" tabindex="0">
+        <!-- Populated by app.js -->
+      </section>
+
+      <section id="panel-fw" class="tab-panel" role="tabpanel"
+               aria-labelledby="tab-fw" tabindex="0">
+        <!-- Populated by app.js -->
+      </section>
+
+    </main>
+
+    <!-- ── FOOTER ───────────────────────────────────────────── -->
+    <footer id="footer" role="contentinfo">
+      <span>ARF v6 · 7,000 MC trials/game · SportRadar live data · 17 active rules · Mar 14 2026</span>
+      <span>Analytical model only — not financial advice</span>
+    </footer>
+
+  </div><!-- /#app -->
+
+  <script src="app.js"></script>
 </body>
 </html>
