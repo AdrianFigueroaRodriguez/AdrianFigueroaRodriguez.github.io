@@ -25,6 +25,11 @@ export default function GameCard(game){
     <span>${game.book}</span>
   </div>
 
+  <div class="arf-row">
+    <span>Status</span>
+    <span>${game.status}</span>
+  </div>
+
   <div class="arf-row prob">
     <span>Model Cover Prob</span>
     <span>Simulating…</span>

@@ -6,8 +6,8 @@ export default function Login(){
 
  div.innerHTML = `
    <h2>QuantEdge Login</h2>
-   <input id="email" placeholder="email"/>
-   <input id="pass" placeholder="password" type="password"/>
+   <input id="email" placeholder="email@company.com"/>
+   <input id="emKey" placeholder="p@s5w0Rd" type="password"/>
    <button>Login</button>
    <p class="error"></p>
  `
@@ -15,10 +15,10 @@ export default function Login(){
  div.querySelector("button").onclick = async ()=>{
 
    const email = div.querySelector("#email").value
-   const pass = div.querySelector("#pass").value
+   const emKey = div.querySelector("#emKey").value
 
    try{
-     await login(email,pass)
+     await login(email,emKey)
      window.location="/"
    }catch(e){
      div.querySelector(".error").innerText = e.message

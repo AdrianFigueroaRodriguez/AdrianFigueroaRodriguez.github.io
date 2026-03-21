@@ -1,5 +1,4 @@
-
-import { getOdds } from "../../api/oddsApi.js"
+import { getLiveGames } from "../../api/liveGamesApi.js"
 import GameCard from "../components/GameCard.js"
 
 export default function Dashboard(){
@@ -12,16 +11,28 @@ export default function Dashboard(){
 
  async function load(){
 
-   const games = await getOdds()
+   try{
 
-   grid.innerHTML=""
+     const games = await getLiveGames()
 
-   games.forEach(g=>{
-     grid.appendChild(GameCard(g))
-   })
+     grid.innerHTML=""
+
+     games.forEach(g=>{
+       grid.appendChild(GameCard(g))
+     })
+
+   }catch(e){
+
+     grid.innerHTML =
+       "<p>Live feed unavailable — using previous snapshot.</p>"
+
+   }
  }
 
  load()
+
+ // refresh every 60 seconds
+ setInterval(load,60000)
 
  return container
 }
