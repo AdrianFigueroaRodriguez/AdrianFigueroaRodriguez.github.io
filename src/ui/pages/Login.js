@@ -8,23 +8,24 @@ export default function Login(){
    <div class="login-container">
      <div class="login-card">
        <div class="login-header">
-         <h1>QuantEdge</h1>
-         <p class="tagline">Trade Like an Insider</p>
-         <p class="subtitle">Quantitative Market Intelligence Platform</p>
+         <h1>Market Quant Ai</h1>
+         <p class="tagline">Trade smarter / more like a PRO / better than an investor</p>
+         <p class="subtitle">Market Quantitative Artifical Intelligence </p>
+         <p class="subtitle">Focus your Inteligence, make Real Emotions</p>
        </div>
 
        <div class="value-props">
          <div class="prop-item">
            <span class="prop-icon">📊</span>
-           <span>Live Insider Trading Data</span>
+           <span>Live NBA Data</span>
          </div>
          <div class="prop-item">
            <span class="prop-icon">🏛️</span>
-           <span>Congressional Trade Tracking</span>
+           <span>NBA seasonal Tracking</span>
          </div>
          <div class="prop-item">
            <span class="prop-icon">📈</span>
-           <span>Institutional Holdings</span>
+           <span>Institutional AI asistance</span>
          </div>
        </div>
 
@@ -45,11 +46,9 @@ export default function Login(){
        </form>
 
        <div class="trust-indicators">
-         <p class="trust-text">Data Trusted By Industry Leaders</p>
+         <p class="trust-text">Real Data, Trusted by leaders like you</p>
          <div class="trust-logos">
-           <span class="logo-placeholder">CNBC</span>
-           <span class="logo-placeholder">Bloomberg</span>
-           <span class="logo-placeholder">Reuters</span>
+          <span class="logo-placeholder">MQai Team, memebers and afiliates</span>
          </div>
        </div>
 
